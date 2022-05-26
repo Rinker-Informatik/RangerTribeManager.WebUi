@@ -1,0 +1,23 @@
+<mat-toolbar class="topbar">
+	<span>
+		<img src="../../../../favicon.ico" class="img">
+	</span>
+	<span class="example-spacer"></span>
+	<section>
+		<div>
+			<div>
+				<button mat-icon-button disabled>
+					<mat-icon class="icon">notifications</mat-icon>
+				</button>
+				<button mat-icon-button>
+					<mat-icon class="icon" [matMenuTriggerFor]="menu">account_circle</mat-icon>
+				</button>
+			</div>
+		</div>
+	</section>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+	<app-user-menu></app-user-menu>
+</mat-menu>
+
