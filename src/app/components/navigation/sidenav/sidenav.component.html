@@ -1,0 +1,42 @@
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer  mode="side" opened="true" class="sidenav">
+        <div class="sidenav-buttons">
+        
+            <mat-nav-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon class="icon">groups</mat-icon>
+                    <h4 mat-line routerLink="members">Mitglieder</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>construction</mat-icon>
+                    <h4 mat-line routerLink="tools">Material</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>festival</mat-icon>
+                    <h4 mat-line routerLink="events">Veranstaltungen</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>calendar_today</mat-icon>
+                    <h4 mat-line routerLink="dates">Termine</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>euro_symbol</mat-icon>
+                    <h4 mat-line routerLink="finance">Finanzen</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>house</mat-icon>
+                    <h4 mat-line routerLink="buildings">Gebäude</h4>
+                </mat-list-item>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>settings</mat-icon>
+                    <h4 mat-line routerLink="settings">Einstellungen</h4>
+                </mat-list-item>
+            </mat-nav-list>
+        </div>
+        
+    </mat-drawer>
+    
+    <div class="example-sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+    </mat-drawer-container>
