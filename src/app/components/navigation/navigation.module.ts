@@ -8,16 +8,19 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from 'src/app/app.component';
 import { FormsModule } from '@angular/forms';
 import { UserMenuComponent } from './topnav/user-menu/user-menu.component';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { AuthGuard } from 'src/app/services/auth/auth.guard';
+import { HttpClientModule } from '@angular/common/http';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
-import { AuthService } from 'src/app/services/auth/auth.service';
-import { AuthGuard } from 'src/app/services/auth/auth.guard';
-import { HttpClientModule } from '@angular/common/http';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 
 function initializeKeycloak(keycloak: KeycloakService) {
@@ -41,7 +44,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
   declarations: [
     TopnavComponent,
     NavigationComponent,
-    UserMenuComponent
+    UserMenuComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ function initializeKeycloak(keycloak: KeycloakService) {
     FormsModule,
     MatCardModule,
     KeycloakAngularModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [
     {

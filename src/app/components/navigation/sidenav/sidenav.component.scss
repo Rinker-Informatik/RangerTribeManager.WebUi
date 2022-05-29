@@ -1,0 +1,24 @@
+.drawer-container {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+  }
+  
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background-color: rgb(214, 214, 214);
+  z-index: -1;
+}
+
+.sidenav-buttons {
+  padding-top: 50px;
+}
+
+.icon {
+  font-size: 36px;
+}
