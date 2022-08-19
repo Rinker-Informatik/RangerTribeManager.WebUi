@@ -1,0 +1,6 @@
+<div>
+    <mat-grid-list cols="4" rowHeight="550px" >
+        <mat-grid-tile *ngFor="let team of teams"><app-team-card [team]="team"></app-team-card></mat-grid-tile>
+        <mat-grid-tile>+</mat-grid-tile>
+    </mat-grid-list>
+</div>

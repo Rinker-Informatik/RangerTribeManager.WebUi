@@ -19,7 +19,7 @@ export class MembersService {
       glutenfree: false,
       mail: "crinker@posteo.de",
       mobile: "015125498237",
-      phone: "",
+      phone: "06045983982",
       swimmer: true,
       vegan: false,
       healthInsurance: "AOK",
@@ -52,7 +52,8 @@ export class MembersService {
           mobile: "015125498237",
           phone: "",
           pickUp: true,
-          legalGuardian: true
+          legalGuardian: false,
+          title: "Mutter"
         }
       ],
       diseases: [
@@ -78,7 +79,23 @@ export class MembersService {
           date: new Date('1996-05-24'), 
         }
       ],
-      other: ""
+      other: "",
+      legal: {
+        employeeCodeOfConductConfirmed: true,
+        clause8aConfirmed: true,
+        expandedCriminalRecordConfirmed: true,
+        expandedCriminalRecordConfirmedDate: new Date('1996-05-24'),
+        expandedCriminalRecord: "",
+        communityMember: true,
+        leaderSignUp: true,
+        communityName: "Gemande YX",
+        firstResponder: true,
+        chainsawCourse: true,
+        clause43IfSG: true,
+        memberCanSwim: true,
+        memberRightsOnOwnPicture: true,
+        memberCanGoHome: true
+      }
     },
     {
       id: "12345",
@@ -122,7 +139,8 @@ export class MembersService {
           mobile: "015125498237",
           phone: "",
           pickUp: true,
-          legalGuardian: true
+          legalGuardian: false,
+          title: "Mutter"
         }
       ],
       diseases: [
@@ -148,7 +166,23 @@ export class MembersService {
           date: new Date('1996-05-24'), 
         }
       ],
-      other: ""
+      other: "",
+      legal: {
+        employeeCodeOfConductConfirmed: true,
+        clause8aConfirmed: true,
+        expandedCriminalRecordConfirmed: true,
+        expandedCriminalRecordConfirmedDate: new Date('1996-05-24'),
+        expandedCriminalRecord: "",
+        communityMember: true,
+        leaderSignUp: true,
+        communityName: "Gemande YX",
+        firstResponder: true,
+        chainsawCourse: true,
+        clause43IfSG: true,
+        memberCanSwim: true,
+        memberRightsOnOwnPicture: true,
+        memberCanGoHome: true
+      }
     },
     {
       id: "12345",
@@ -192,7 +226,8 @@ export class MembersService {
           mobile: "015125498237",
           phone: "",
           pickUp: true,
-          legalGuardian: true
+          legalGuardian: false,
+          title: "Mutter"
         }
       ],
       diseases: [
@@ -218,7 +253,23 @@ export class MembersService {
           date: new Date('1996-05-24'), 
         }
       ],
-      other: ""
+      other: "",
+      legal: {
+        employeeCodeOfConductConfirmed: true,
+        clause8aConfirmed: true,
+        expandedCriminalRecordConfirmed: true,
+        expandedCriminalRecordConfirmedDate: new Date('1996-05-24'),
+        expandedCriminalRecord: "",
+        communityMember: true,
+        leaderSignUp: true,
+        communityName: "Gemande YX",
+        firstResponder: true,
+        chainsawCourse: true,
+        clause43IfSG: true,
+        memberCanSwim: true,
+        memberRightsOnOwnPicture: true,
+        memberCanGoHome: true
+      }
     },
     {
       id: "12345",
@@ -262,7 +313,8 @@ export class MembersService {
           mobile: "015125498237",
           phone: "",
           pickUp: true,
-          legalGuardian: true
+          legalGuardian: false,
+          title: "Mutter"
         }
       ],
       diseases: [
@@ -288,7 +340,23 @@ export class MembersService {
           date: new Date('1996-05-24'), 
         }
       ],
-      other: ""
+      other: "",
+      legal: {
+        employeeCodeOfConductConfirmed: true,
+        clause8aConfirmed: true,
+        expandedCriminalRecordConfirmed: true,
+        expandedCriminalRecordConfirmedDate: new Date('1996-05-24'),
+        expandedCriminalRecord: "",
+        communityMember: true,
+        leaderSignUp: true,
+        communityName: "Gemande YX",
+        firstResponder: true,
+        chainsawCourse: true,
+        clause43IfSG: true,
+        memberCanSwim: true,
+        memberRightsOnOwnPicture: true,
+        memberCanGoHome: true
+      }
     }
   ]
 

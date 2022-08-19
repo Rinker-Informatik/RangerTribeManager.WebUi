@@ -1,1 +1,128 @@
-<p>members-details works!</p>
+<button mat-icon-button aria-label="Example icon button with a open in new tab icon" class="save_button" >
+    <mat-icon>save</mat-icon>
+</button>
+
+<form class="detail" appearance="fill" [formGroup]="memberForm">
+
+    <mat-form-field appearance="fill">
+		<mat-label>Name</mat-label>
+      	<input type="text" matInput formControlName="surename">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      	<mat-label>Vorname</mat-label>
+      	<input type="text" matInput formControlName="forname">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" >
+        <mat-label>Geschlecht</mat-label>
+        <select matNativeControl formControlName="gender">
+            <option value="w">Weiblich</option>
+            <option value="m">Männlich</option>
+            <option value="d">Divers</option>
+        </select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" >
+        <mat-label>Geburtsdatum</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthdate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker ></mat-datepicker>
+	</mat-form-field>
+
+    <br>
+
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>Adresse</mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <p formGroupName="address">
+                <mat-form-field appearance="fill">
+                    <mat-label>Straße</mat-label>
+                    <input matInput formControlName="street">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Hausnummer</mat-label>
+                    <input matInput formControlName="housenumber">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Stadt</mat-label>
+                    <input matInput formControlName="city">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>PLZ</mat-label>
+                    <input matInput formControlName="zipcode">
+                </mat-form-field>
+            </p>
+      
+        </mat-expansion-panel>    
+
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+
+            <mat-expansion-panel-header>
+                <mat-panel-title>Kontaktdaten</mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Telefon</mat-label>
+                    <input matInput formControlName="phone">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Mobil</mat-label>
+                    <input matInput formControlName="mobile">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>E-Mail</mat-label>
+                    <input matInput formControlName="mail">
+                </mat-form-field>
+            </p>
+      
+      </mat-expansion-panel> 
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>Kontaktpersonen</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-contactpersons [contactPersons]="member.contactpersons"></app-contactpersons>
+        
+         
+      </mat-expansion-panel> 
+      
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+
+        <mat-expansion-panel-header>
+          <mat-panel-title >Gesundheit</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-health [diseases]="member.diseases" [medications]="member.medications" [allergies]="member.allergies" [healthInsurance]="member.healthInsurance"></app-health>
+         
+      </mat-expansion-panel> 
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>Rechtliches</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-legal [legal]="member.legal"></app-legal>
+
+      </mat-expansion-panel> 
+      
+    </mat-accordion>
+</form>

@@ -2,6 +2,7 @@ import { Person } from "../general/person";
 import { Allergy } from "./allergy";
 import { ContactPerson } from "./contactPerson";
 import { Diseases } from "./diseases";
+import { Legal } from "./legal";
 import { Medication } from "./medication";
 import { Vaccination } from "./vaccination";
 
@@ -18,4 +19,5 @@ export interface Member extends Person {
     vegan: boolean;
     glutenfree: boolean;
     other: string;
+    legal: Legal;
 }
