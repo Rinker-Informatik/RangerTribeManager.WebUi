@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from './components/navigation/navigation.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavigationModule } from './components/navigation/navigation.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NavigationModule
+    NavigationModule,
+    CommonModule
   ],
   providers: [
   ],

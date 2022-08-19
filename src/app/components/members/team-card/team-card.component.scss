@@ -1,0 +1,51 @@
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+.border {
+  max-height: 500px;
+}
+
+.example-card {
+  max-width: 500px;
+}
+
+.example-header-image {
+  background-image: url('https://image.geo.de/31404552/t/8J/v4/w960/r1.5/-/fuchs-adobestock-435762248.jpg');
+  background-size: cover;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-lis {
+
+  overflow: auto;
+}
+
+.mat-list .mat-list-item {
+  height: 35px; /* default is 72px */
+}
+.mat-card.scrollable-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  > .mat-card-title-group {
+    display: block;
+  }
+
+  > .mat-card-content {
+    overflow-y: auto;
+  }
+}
+.mat-list-scrolling {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

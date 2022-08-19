@@ -1,0 +1,83 @@
+<form [formGroup]="legalForm">
+
+    <div>
+        <mat-checkbox formControlName="memberCanSwim">Schwimmer</mat-checkbox>
+    </div>
+    <div>
+        <mat-checkbox formControlName="memberRightsOnOwnPicture">Recht am eigenen Bild(Grundgesetzt §22)</mat-checkbox>
+    </div>
+    <div>
+        <mat-checkbox formControlName="memberCanGoHome">Darf alleine gehen</mat-checkbox>
+    </div>
+
+    <br>
+
+    <mat-label>Kindeswohl</mat-label>
+
+    <div>
+
+      <mat-checkbox formControlName="employeeCodeOfConductConfirmed">Verhaltenskodex</mat-checkbox>
+      <mat-checkbox formControlName="clause8aConfirmed">Schulung nach §8a SGB VIII</mat-checkbox>
+      <mat-checkbox formControlName="expandedCriminalRecordConfirmed">eFZ ohne Eintrag</mat-checkbox>
+
+    </div>
+
+    <div>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="efz">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="efz"></mat-datepicker-toggle>
+        <mat-datepicker #efz></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="efzEinsicht">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="efzEinsicht"></mat-datepicker-toggle>
+        <mat-datepicker #efzEinsicht></mat-datepicker>
+      </mat-form-field>
+
+    </div>
+
+    <br>
+    
+    <mat-label>Mitgliedschaft</mat-label>
+    
+    <div>
+      <mat-checkbox formControlName="leaderSignUp">Leiteranmeldung</mat-checkbox>
+      <mat-checkbox formControlName="communityMember">Gemeindemitglied</mat-checkbox>
+    </div>
+
+    <div>
+    
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="taufdatum">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="taufdatum"></mat-datepicker-toggle>
+            <mat-datepicker #taufdatum></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Gemeindename</mat-label>
+            <input type="text" matInput formControlName="communityName">
+        </mat-form-field>
+
+    </div>
+
+    <br>
+
+    <br>
+    
+    <mat-label>Sonstiges</mat-label>
+
+    <div>
+      <mat-checkbox formControlName="firstResponder">Ersthelfer</mat-checkbox>
+      <mat-checkbox formControlName="chainsawCourse">Kettensägenlehrgang</mat-checkbox>
+      <mat-checkbox formControlName="clause43IfSG">Erstbelehrung nach §43 IfSG</mat-checkbox>
+    </div>
+
+  </form>

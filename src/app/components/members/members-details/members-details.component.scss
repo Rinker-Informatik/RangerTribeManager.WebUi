@@ -1,0 +1,64 @@
+.detail {
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-right: 40px;
+    margin: 0px;
+}
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-container .mat-form-field {
+    width: 220px;
+  }
+  
+  .example-container form {
+    margin-bottom: 20px;
+  }
+  
+  .example-container form > * {
+    margin: 5px 0;
+  }
+  
+  .example-container .mat-radio-button {
+    margin: 0 12px;
+  }
+  
+
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .save_button {
+    margin-right: 50px;
+    float: right;
+  }
+  mat-form-field{
+    margin-right: 10px;
+  }
+  table {
+    width: 100%;
+  }
+  mat-icon{
+  }
+  mat-checkbox{
+    margin-right: 10px;
+  }
+
+  .allergy-button-green {
+    background-color: green;
+  }
+  .allergy-button-yellow {
+    background-color: yellow;
+  }
+  .allergy-button-red {
+    background-color: red;
+  }

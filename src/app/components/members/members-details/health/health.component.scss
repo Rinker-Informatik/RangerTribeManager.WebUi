@@ -1,0 +1,36 @@
+  .allergy-button-green {
+    background-color: green;
+  }
+  .allergy-button-yellow {
+    background-color: yellow;
+  }
+  .allergy-button-red {
+    background-color: red;
+  }
+
+  .allergy-green {
+    font-size: 36px;
+    color: green;
+  }
+  .allergy-yellow {
+    font-size: 36px;
+    color: yellow;
+  }
+  .allergy-red {
+    font-size: 36px;
+    color: red;
+
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  mat-form-field{
+    margin-right: 10px;
+  }
