@@ -1,0 +1,113 @@
+<button mat-icon-button aria-label="Example icon button with a open in new tab icon" class="save_button" color="primary">
+	<mat-icon>save</mat-icon>
+</button>
+<div class="row detail">
+	
+	<form class="example-form">
+		<mat-form-field class="example-full-width" >
+			<mat-label>Teamname</mat-label>
+			<input type="text" matInput [formControl]="myControl">
+		</mat-form-field>
+		
+		
+		<mat-form-field>
+			<mat-label>Stufe</mat-label>
+			<select matNativeControl>
+				<option value="Entdecker">Entdecker</option>
+				<option value="Forscher">Forscher</option>
+				<option value="Kundschafter">Kundschafter</option>
+				<option value="Pfadfinder">Pfadfinder</option>
+				<option value="Pfadranger">Pfadranger</option>
+			</select>
+		</mat-form-field>
+	</form>
+
+	<mat-divider></mat-divider>
+	<br>
+	<div class="column">
+		<mat-label>Teamleiter</mat-label>
+		<mat-list role="list">
+			<mat-list-item role="listitem">
+				<form class="example-form">
+					<mat-form-field class="example-full-width" >
+					<input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+					<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+						<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+						{{option.name}}
+						</mat-option>
+					</mat-autocomplete>
+					</mat-form-field>
+				</form>
+				<div class="example-button-container">
+					<button mat-raised-button matTooltip="Fühgt eine vorhandenen Person hinzu">
+					<mat-icon>person_add</mat-icon>
+					</button>
+					<button mat-raised-button matTooltip="Erzeugt eine neue Person">
+					<mat-icon>note_add</mat-icon>
+					</button>
+				</div>
+			</mat-list-item>
+			<mat-list-item role="listitem">Teamling 2</mat-list-item>
+			<mat-list-item role="listitem">Teamling 3</mat-list-item>
+		</mat-list>
+		<mat-label>Teamhelfer</mat-label>
+		<mat-list role="list">
+			<mat-list-item role="listitem">
+				<form class="example-form">
+					<mat-form-field class="example-full-width" >
+					<input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+					<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+						<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+						{{option.name}}
+						</mat-option>
+					</mat-autocomplete>
+					</mat-form-field>
+				</form>
+				<div class="example-button-container">
+					<button mat-raised-button matTooltip="Fühgt eine vorhandenen Person hinzu">
+					<mat-icon>person_add</mat-icon>
+					</button>
+					<button mat-raised-button matTooltip="Erzeugt eine neue Person">
+					<mat-icon>note_add</mat-icon>
+					</button>
+				</div>
+			</mat-list-item>
+			<mat-list-item role="listitem">Teamling 2</mat-list-item>
+			<mat-list-item role="listitem">Teamling 3</mat-list-item>
+		</mat-list>
+	</div>
+
+	<div class="column">
+		<mat-label>Mitglieder</mat-label>
+		<mat-list role="list">
+			<mat-list-item role="listitem">
+				<form class="example-form">
+					<mat-form-field class="example-full-width" >
+					<input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+					<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+						<mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+						{{option.name}}
+						</mat-option>
+					</mat-autocomplete>
+					</mat-form-field>
+				</form>
+				<div class="example-button-container">
+					<button mat-raised-button matTooltip="Fühgt eine vorhandenen Person hinzu">
+					<mat-icon>person_add</mat-icon>
+					</button>
+					<button mat-raised-button matTooltip="Erzeugt eine neue Person">
+					<mat-icon>note_add</mat-icon>
+					</button>
+				</div>
+			</mat-list-item>
+			<mat-list-item role="listitem">Teamling 2</mat-list-item>
+			<mat-list-item role="listitem">Teamling 3</mat-list-item>
+		</mat-list>
+	</div>
+
+	
+	<mat-label>Bild</mat-label>
+	<input type="file" class="file-upload" onchange="console.log(event.target.files)">
+	<img src="https://image.geo.de/31404552/t/8J/v4/w960/r1.5/-/fuchs-adobestock-435762248.jpg" alt="Italian Trulli" style="width:200px">
+
+</div>

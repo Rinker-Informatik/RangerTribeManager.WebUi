@@ -26,6 +26,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
@@ -72,6 +73,7 @@ import { LegalComponent } from './members-details/legal/legal.component';
     MatCheckboxModule,
     MatButtonToggleModule,
     MatSelectModule,
+    MatAutocompleteModule
   ],
   providers: [
   ],
